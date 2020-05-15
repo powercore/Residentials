@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Residentials", "Residentials\Residentials.csproj", "{B05E7C8F-EF21-4C5E-9678-9BA0149DAC34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B05E7C8F-EF21-4C5E-9678-9BA0149DAC34}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{B05E7C8F-EF21-4C5E-9678-9BA0149DAC34}.Debug|anycpu.Build.0 = Debug|anycpu
+		{B05E7C8F-EF21-4C5E-9678-9BA0149DAC34}.Release|anycpu.ActiveCfg = Release|anycpu
+		{B05E7C8F-EF21-4C5E-9678-9BA0149DAC34}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+EndGlobal
