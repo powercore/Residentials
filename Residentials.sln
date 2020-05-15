@@ -11,7 +11,10 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B05E7C8F-EF21-4C5E-9678-9BA0149DAC34}.Debug|anycpu.ActiveCfg = Debug|anycpu
 		{B05E7C8F-EF21-4C5E-9678-9BA0149DAC34}.Debug|anycpu.Build.0 = Debug|anycpu
-		{B05E7C8F-EF21-4C5E-9678-9BA0149DAC34}.Release|anycpu.ActiveCfg = Release|anycpu
-		{B05E7C8F-EF21-4C5E-9678-9BA0149DAC34}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.StandardHeader = $1
+		$0.VersionControlPolicy = $2
 	EndGlobalSection
 EndGlobal
