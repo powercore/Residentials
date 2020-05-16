@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 
 namespace Residentials
 {
@@ -9,12 +10,17 @@ namespace Residentials
     {
       Residentials building = new Residentials();
 
-      Residentials facility = building.CreateResidentionals("18.12.1971");
+      Residentials facility = building.CreateResidentionals("18.12.1984","Elm Street,1428");
       building.ChangeOwner(facility, "Mastah Yoda");
+      building.RegisterTenant(facility, "Luke Skywalker");
+      building.RegisterTenant(facility, "Obi Wan Lenobi");
+      building.DischargeTenant(facility, "Luke Skywalker");
+      Thread.Sleep(2000);
+      building.DischargeTenant(facility, "Freddy Krueger");
 
-      Console.WriteLine(facility.Owner);
-      foreach (ResidentialsRecord rec in facility.changes)
-      Console.WriteLine($"{rec.recordDate}: {rec.recordValue}");
+      Console.WriteLine(facility.GetResidentialsInformation("Elm Street,1428"));
+      Console.WriteLine(facility.GetResidentialsInformation("Elm Street,1428",DateTime.Now.Subtract(new TimeSpan(0, 0, 2))));
+
     }
   }
 }
