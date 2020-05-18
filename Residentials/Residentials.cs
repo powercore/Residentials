@@ -30,14 +30,13 @@ namespace Residentials
       T RegisterTenant(T obj, string tenant);
 
       // Discharge tenant from facility
-      T DischargeTenant(T pbj, string tenant);
+      T DischargeTenant(T obj, string tenant);
 
       // Get all infos about facility
       string GetResidentialsInformation(string address);
 
       // Get all infos about facility from some date
       string GetResidentialsInformation(string address, DateTime date);
-
     }
 
   public class Residentials : IResidentials<Residentials>
@@ -131,7 +130,7 @@ namespace Residentials
 
         foreach (ResidentialsRecord rr in changes)
         { 
-          if (rr.recordDate> date)
+          if (rr.recordDate > date)
             result += $"{rr.recordDate}: {rr.recordValue}\n";
         }
         return result;
